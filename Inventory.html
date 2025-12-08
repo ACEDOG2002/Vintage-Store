@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <iframe data-testid="embed-iframe" style="border-radius:0px" src="https://open.spotify.com/embed/playlist/2LwT4DbwHy08gxtFU7b1BF?utm_source=generator" width="70%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <title>Second Hand History</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Document</title>
+    </head>
+    
+<body>
+        <head>
+   <!-- All techy stuff goes here, inside HEAD -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Overall title of your page -->
+   <title>Empty Template</title>
+   <!-- Link to external CSS file -->
+   <link rel="stylesheet" href="Inventory.css">
+   <!-- jQuery library -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <!-- Link to external JavaScript file -->
+</head>
+    
+</body>
+<style>
+    body{
+        background-image: url(BackgroundInventory1.jpeg);
+        height: 100vh;
+    
+        background-position: center;
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<!-- jquery cdn -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div class="container">
+    <div class="col">
+
+        <div class="box"><img src= "images/a.jpeg"></div>
+        <div class="box"><img src= "images/b.jpeg"></div>
+        <div class="box"><img src= "images/c.jpeg"></div>
+        <div class="box"><img src= "images/d.jpeg"></div>
+        <div class="box"><img src= "images/e.jpeg"></div>
+        <div class="box"><img src= "images/f.jpeg"></div>
+        <div class="box"><img src= "images/g.jpeg"></div>
+
+    </div>
+    <div class="col">
+
+    <div class="full-image">
+        <img src="images/a.jpeg">
+        </div>
+
+    </div>
+</div>
+
+<!-- add jquery script-->
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('.box').click(function(){
+            $('.full-image').html($(this).html());
+        });
+    });
+
+</script>
+
+<style>
+    .container{
+        width: 100%;
+        overflow: auto;
+        margin: 10px;
+    
+    }
+    .box img{
+        width: 79.5px;
+        height: 79.5px;
+        padding: 0px;
+       
+    }
+    .full-image{
+        width: 580px;
+        height: 580px;
+        padding: 0px;
+        margin: 100px;
+       
+    }
+
+    .col{
+        float: left;
+    }
+
+    .full-image img{
+        width: 100%;
+        height: 100%;
+        
+      
+    }   
+</style>
+
+
+</html>
+
+    
