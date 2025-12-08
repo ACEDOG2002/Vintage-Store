@@ -1,28 +1,44 @@
-document.addEventListener('DOMContentLoaded', () => {
+
+var button = document.getElementById('interactive-button');
+var overlay = document.getElementById('spiral-overlay');
+var spiral = document.getElementById('spiral-content');
+var animationDuration = 8000; 
+
+function activateSpiral(event) {
     
-    const button = document.getElementById('interactive-button');
-    const overlay = document.getElementById('spiral-overlay');
-    const spiral = document.getElementById('spiral');
+    
+    event.preventDefault(); 
+    
+    
+    overlay.className = 'show-spiral';
+    
+    
+    spiral.className = 'animate-spiral';
 
     
-    button.addEventListener('click', () => {
+    window.setTimeout(function() {
         
         
-        overlay.classList.add('show-spiral');
+        overlay.className = ''; 
+        spiral.className = '';  
         
-       
-        spiral.classList.remove('animate-spiral');
         
-       
-        setTimeout(() => {
-            spiral.classList.add('animate-spiral');
-        }, 10); 
+        var anchorTag = button.querySelector('a');
+        if (anchorTag) {
+            var targetUrl = anchorTag.href;
+            
+            window.location.href = targetUrl;
+        }
+        
+    }, animationDuration);
+}
 
 
+if (button) {
+    if (button.addEventListener) {
+        button.addEventListener('click', activateSpiral, false);
+    } else {
         
-        setTimeout(() => {
-            overlay.classList.remove('show-spiral');
-        }, 2200); 
-        
-    });
-});
+        button.attachEvent('onclick', activateSpiral);
+    }
+}

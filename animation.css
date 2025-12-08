@@ -1,3 +1,4 @@
+
 #interactive-button {
     border-style: outset;
     border-width: 3px;
@@ -55,11 +56,11 @@
     to { transform: rotate(360deg); }
 }
 
-
+/* Blinking Text Effect */
 @keyframes blink {
     50% { opacity: 0; }
 }
 #spiral-content h2 {
-    animation: blink 5s step-end infinite;
-    color: #4000ff; 
+    animation: blink 3s step-end infinite;
+    color: #FF00FF; 
 }
