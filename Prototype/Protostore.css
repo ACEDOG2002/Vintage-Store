@@ -1,0 +1,54 @@
+#Home{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-image: url("/Images/birthday.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#s1 {
+    display: none;
+    height: 1250px;
+}
+#s2 {
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/Prototype/TinStore/TinBackground.jpeg");
+    background-size: 1920px 850px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#s3 {
+    display: none;
+    height: 1200px;
+}
+.Back{
+  bottom: 10px;
+  right: 10%;
+}
+#ShopRotation{
+  background-color: #04AA6D; color: white; padding: 16px; font-size: 16px; border: none;
+}
+#DropDown{
+  position: relative; display: inline-block;
+}
+#ShopKeepers{
+  display: none; position: absolute; background-color: #f1f1f1; min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;
+}
+#ShopKeepers a {
+  color: black; padding: 12px 16px; text-decoration: none; display: block;
+}
+#Shopkeepers a:hover {background-color: #ddd;}
+#DropDown:hover #ShopKeepers {display: block;}
+#DropDown:hover #ShopRotation {background-color: #3e8e41;}
