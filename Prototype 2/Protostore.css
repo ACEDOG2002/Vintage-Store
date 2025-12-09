@@ -27,10 +27,19 @@
     background-position: center center;
     background-repeat: no-repeat;
     z-index: -1;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
 }
 #s3 {
     display: none;
     height: 1200px;
+}
+#prev{
+transform: translate(600px, 600px);
+}
+#next{
+transform: translate(1130px, 615px);
 }
 .Back{
   bottom: 10px;
@@ -39,7 +48,7 @@
 #ShopRotation{
   background-color: #04AA6D; color: white; padding: 16px; font-size: 16px; border: none;
 }
-#DropDown{
+#DropDown, #selectScreen{
   position: relative; display: inline-block;
 }
 #ShopKeepers{

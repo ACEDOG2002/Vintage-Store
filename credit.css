@@ -49,7 +49,7 @@ body {
   margin-top: 20px;
   height: 360px;
   overflow: hidden;
-  border: 3px dashed #a800ea;
+  border: 8px dashed #a800ea;
   border-radius: 12px;
   padding: 10px;
   position: relative;        
@@ -67,7 +67,7 @@ body {
   flex-direction: column;
   align-items: center;       
   width: 80%;                
-  animation: scrollCredits 16s linear infinite;
+  animation: scrollCredits 15s linear infinite;
 }
 
 p {
@@ -88,10 +88,10 @@ p {
 .name{color:#5ed9e7}
 
 @keyframes scrollCredits {
-  
-  0%   { transform: translate(-50%, 40vh); }  
-  100% { transform: translate(-50%, -140%); } 
+  0%   { transform: translate(-50%, 60%); }   
+  100% { transform: translate(-50%, -140%); }  
 }
+
 
 @media (min-width:800px){
   .credits-container{ width:520px; height:620px; }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vintage Thrift Store</title>
+<title>Shopkeepers</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -11,15 +11,15 @@ body {
 margin: 0;
 padding: 0;
 font-family: 'Press Start 2P', cursive;
-color: #c67deb;
+color: #000000;
 display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
 image-rendering: pixelated;
-text-shadow: 0 0 8px #c67deb;
+text-shadow: 0 0 8px #f1e199;
 
-  background-image: url("cozybackground.jpeg");
+  background-color:antiquewhite;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ display: block;
 width: 260px;
 padding: 20px;
 margin: 20px auto;
-background: #111;
+background: #8c613b;
 border: 3px solid #ffffff;
 border-radius: 6px;
 color: #ffffff;
@@ -51,7 +51,7 @@ text-shadow: 0 0 6px #000000;
 }
 
 .menu-button:hover {
-background: #c67deb;
+background: #ac614c;
 color: black;
 text-shadow: none;
 transform: scale(1.08);
@@ -61,56 +61,46 @@ transform: scale(1.08);
 margin-top: 30px;
 font-size: 0.9rem;
 opacity: 0.9;
-text-shadow: 0 0 6px #ff60c5;
+text-shadow: 0 0 6px #cff497;
 }
 </style>
 </head>
 <body>
 <div class="menu-container">
-<h1>Vintage Thrift Store!</h1>
-<button class="menu-button" id="startBtn">Start shopping</button>
-<button class="menu-button" id="exitBtn">Credits</button>
-<div id="status">Select an option...</div>
+<h1>Shopkeepers</h1>
+<button class="menu-button" id="tinBtn">Mr. Tin's Effluvium Enpodium</button>
+<button class="menu-button" id="franklinBtn">Mr. Franklin</button>
+<button class="menu-button" id="murryBtn">Ms. Murry</button>
+<button class="menu-button" id="exitBtn">Return</button>
+<div id="status">Select an character...</div>
 </div>
 
 <script>
 const status = document.getElementById("status");
 
-document.getElementById("startBtn").addEventListener("click", () => {
+document.getElementById("tinBtn").addEventListener("click", () => {
 document.getElementById('clickSound').play();
-status.textContent = "Opening game...";
-window.location.href = "MrFranklin.html"; 
+status.textContent = "Opening Mr.Tin...";
 });
 
+document.getElementById("franklinBtn").addEventListener("click", () => {
+document.getElementById('clickSound').play();
+status.textContent = "Opening Mr.Franklin...";
+});
 
+document.getElementById("murryBtn").addEventListener("click", () => {
+document.getElementById('clickSound').play();
+status.textContent = "Opening Ms.Murry...";
+});
 document.getElementById("exitBtn").addEventListener("click", () => {
 document.getElementById('clickSound').play();
-status.textContent = "Opening credits...";
+status.textContent = "Returning to menu...";
 });
 </script>
 <audio id="clickSound" src="data:audio/wav;base64,UklGRhQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YRAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA"></audio>
-<audio id="bgMusic" loop>
-  <source src="dreamsofchildhood.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  const music = document.getElementById("bgMusic");
-  music.volume = 0.3;
-
-  
-  music.play().catch(() => {
-    
-    document.addEventListener("click", () => {
-      if (music.paused) {
-        music.play();
-      }
-    }, { once: true });
-  }); 
 
 </script>
- <script src="project.js"></script>
+ <script src="menu2.js"></script>
 </body>
-
-
 
 </html>
