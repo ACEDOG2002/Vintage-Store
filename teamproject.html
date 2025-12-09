@@ -1,31 +1,126 @@
-
+<ol>
+         <li><a href="MrFranklin.html">Vintage store</a></li>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <title>Vintage Store</title>
-   
-   <link rel="stylesheet" href="teamproject.css">
-   
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  
-   <script src="teamproject.js" DEFER></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vintage Thrift Store</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Press Start 2P', cursive;
+color: #c67deb;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+image-rendering: pixelated;
+text-shadow: 0 0 8px #c67deb;
+
+  background-image: url("cozybackground.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+.menu-container {
+text-align: center;
+}
+
+
+h1 {
+font-size: 2rem;
+margin-bottom: 40px;
+text-shadow: 0 0 12px #ffffff; 
+}
+
+
+.menu-button {
+display: block;
+width: 260px;
+padding: 20px;
+margin: 20px auto;
+background: #111;
+border: 3px solid #ffffff;
+border-radius: 6px;
+color: #ffffff;
+font-size: 0.9rem;
+cursor: pointer;
+transition: 0.2s;
+text-shadow: 0 0 6px #000000;
+}
+
+
+.menu-button:hover {
+background: #c67deb;
+color: black;
+text-shadow: none;
+transform: scale(1.08);
+}
+
+
+#status {
+margin-top: 30px;
+font-size: 0.9rem;
+opacity: 0.9;
+text-shadow: 0 0 6px #ff60c5;
+}
+</style>
 </head>
-
 <body>
-   <div>
-        <h1> Vintage Store </h1>
+<div class="menu-container">
+<h1>Vintage Thrift Store!</h1>
+<button class="menu-button" id="startBtn">Start shopping</button>
+<button class="menu-button" id="exitBtn">Credits</button>
+<div id="status">Select an option...</div>
+</div>
+
+<script>
+const status = document.getElementById("status");
 
 
-   </div>
-      <ol>
-         <li><a href="MrFranklin.html">Vintage store</a></li>
+document.getElementById("startBtn").addEventListener("click", () => {
+document.getElementById('clickSound').play();
+status.textContent = "Opening game...";
+});
 
+document.getElementById("exitBtn").addEventListener("click", () => {
+document.getElementById('clickSound').play();
+status.textContent = "Opening credits...";
+});
+</script>
+<audio id="clickSound" src="data:audio/wav;base64,UklGRhQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YRAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA"></audio>
+
+<audio id="bgMusic" loop>
+  <source src="dreamsofchildhood.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById("bgMusic");
+  music.volume = 0.3;
+
+  // Try autoplay immediately
+  music.play().catch(() => {
+    // If autoplay is blocked, wait for first user interaction
+    document.addEventListener("click", () => {
+      if (music.paused) {
+        music.play();
+      }
+    }, { once: true });
+  }); 
+
+</script>
+ <script src="project.js"></script>
 </body>
+
+</html>
+
 
 
 
