@@ -25,6 +25,9 @@ body {
 #Sweater {width: 300px;}
 
 
+/* --- 4. POSITIONING (All elements are fixed/absolute) --- */
+
+/* Shopkeeper: Positioned on the left side, adjusted from -100px to be visible */
 #Shopkeeper {
     position:fixed;
     top: 50px;
@@ -66,37 +69,21 @@ photo:hover .description {
     right: 350px;
   
 }
-
 #SkullLamp {
     position:fixed;
     top: 110px;
     right: 200px;
-  
 }
-.image-container {
-    position:relative;
-}
-
 #Lighter {
     position:fixed;
     top: 400px;
     right: 157px;
-  
 }
-.image-container {
-    position:relative;
-}
-
 #Pearls {
     position:fixed;
     top: 280px;
     right: 310px;
-  
 }
-.image-container {
-    position:relative;
-}
-
 #CD {
     position:fixed;
     top: 445px;
@@ -114,9 +101,7 @@ photo:hover .description {
     position:fixed;
     top: 50px;
     right: 660px;
-  
 }
-
 #AlienTee {
     position:fixed;
     top: 100px;
@@ -133,7 +118,6 @@ photo:hover .description {
     position:fixed;
     top: 280px;
     right: 630px;
-  
 }
 #Sweater {
     position:fixed;
