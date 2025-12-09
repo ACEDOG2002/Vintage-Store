@@ -1,5 +1,3 @@
-<ol>
-         <li><a href="MrFranklin.html">Vintage store</a></li>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,6 @@
 <title>Vintage Thrift Store</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 
 body {
 margin: 0;
@@ -28,18 +25,15 @@ text-shadow: 0 0 8px #c67deb;
   background-repeat: no-repeat;
 }
 
-
 .menu-container {
 text-align: center;
 }
-
 
 h1 {
 font-size: 2rem;
 margin-bottom: 40px;
 text-shadow: 0 0 12px #ffffff; 
 }
-
 
 .menu-button {
 display: block;
@@ -56,14 +50,12 @@ transition: 0.2s;
 text-shadow: 0 0 6px #000000;
 }
 
-
 .menu-button:hover {
 background: #c67deb;
 color: black;
 text-shadow: none;
 transform: scale(1.08);
 }
-
 
 #status {
 margin-top: 30px;
@@ -84,11 +76,12 @@ text-shadow: 0 0 6px #ff60c5;
 <script>
 const status = document.getElementById("status");
 
-
 document.getElementById("startBtn").addEventListener("click", () => {
 document.getElementById('clickSound').play();
 status.textContent = "Opening game...";
+window.location.href = "MrFranklin.html"; 
 });
+
 
 document.getElementById("exitBtn").addEventListener("click", () => {
 document.getElementById('clickSound').play();
@@ -96,7 +89,6 @@ status.textContent = "Opening credits...";
 });
 </script>
 <audio id="clickSound" src="data:audio/wav;base64,UklGRhQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YRAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA"></audio>
-
 <audio id="bgMusic" loop>
   <source src="dreamsofchildhood.mp3" type="audio/mpeg">
 </audio>
@@ -119,8 +111,6 @@ status.textContent = "Opening credits...";
  <script src="project.js"></script>
 </body>
 
+
+
 </html>
-
-
-
-

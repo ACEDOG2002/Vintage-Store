@@ -1,0 +1,100 @@
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;padding:0}
+body {
+  margin: 0;
+  background: radial-gradient(circle, #9358e6, #05010a);
+  font-family: 'Press Start 2P', cursive;
+  color: #e96cff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.credits-container {
+  width: 420px;
+  height: 540px;
+  background: #120b2a;
+  border: 4px solid #ff77e9;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 0 #000;
+}
+
+#backBtn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 8px 12px;
+  background: #5ed9e7;
+  color: #000;
+  border: 3px solid #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #000;
+}
+#backBtn:active { transform: translateY(2px); box-shadow:0 2px 0 #000; }
+
+.title {
+  margin-top: 50px;
+  font-size: 16px;
+  color: #5ed9e7;
+  text-shadow: 0 0 8px #dde8e9;
+}
+
+.credits-box {
+  margin-top: 20px;
+  height: 360px;
+  overflow: hidden;
+  border: 3px dashed #a800ea;
+  border-radius: 12px;
+  padding: 10px;
+  position: relative;        
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+}
+
+
+.credits-scroll {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  width: 80%;                
+  animation: scrollCredits 16s linear infinite;
+}
+
+p {
+  margin: 22px 0;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;        
+  width: 100%;
+  word-break: break-word;
+}
+
+.game-title {
+  color: #ff77e9;
+  font-size: 12px;
+}
+
+
+.name{color:#5ed9e7}
+
+@keyframes scrollCredits {
+  
+  0%   { transform: translate(-50%, 40vh); }  
+  100% { transform: translate(-50%, -140%); } 
+}
+
+@media (min-width:800px){
+  .credits-container{ width:520px; height:620px; }
+  .credits-scroll{ animation-duration: 22s; width:70% }
+  p{ font-size:12px; margin:26px 0 }
+}
