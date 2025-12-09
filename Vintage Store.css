@@ -1,0 +1,74 @@
+/*AI Usage:
+Prompt: Can you help with the sizing of the shoopkeeper.
+Responce: Yes i can do that for you.
+My Changes: I didnt really chnage anything myself
+Resoning: I couldnt figure out how to size the shoopkeeper and I also coulnt figure out how to ground the person.
+What code is AI:The shopkeeper code
+*/
+body { 
+  margin: 0;
+  padding: 0;
+  background: url("vintage_store_background.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Georgia, serif;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: #3b1f1f;
+}
+
+.shopkeeper {
+  position: fixed;
+  left: 50%;
+  bottom: -350px;
+  transform: translateX(-50%) scale(2.2);
+  height: 800px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.clothes-buttons {
+  position: fixed;
+  right: 40px;
+  bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  z-index: 10;
+}
+
+.clothes-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  color: #2c1a12;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s;
+}
+
+.clothes-buttons button img {
+  width: 120px;
+  display: block;
+}
+
+.clothes-buttons button:hover {
+  transform: scale(2.2);
+}
+
+.clothes-buttons button.selected {
+  transform: scale(10.10); 
+  box-shadow: 0 0 25px #f0e68c;
+  z-index: 20; 
+}
+
+.clothes-buttons span {
+  margin-top: 6px;
+  display: block;
+}
