@@ -22,7 +22,7 @@
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("/Prototype/TinStore/TinBackground.jpeg");
+    background-image: url("TinBackground.jpeg");
     background-size: 1920px 850px;
     background-position: center center;
     background-repeat: no-repeat;
