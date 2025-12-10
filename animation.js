@@ -2,7 +2,7 @@
 var button = document.getElementById('interactive-button');
 var overlay = document.getElementById('spiral-overlay');
 var spiral = document.getElementById('spiral-content');
-var animationDuration = 8000; 
+var animationDuration = 4000; 
 
 function activateSpiral(event) {
     
