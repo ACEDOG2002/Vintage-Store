@@ -4,15 +4,12 @@
     left: 0;
     width: 50vw;
     height: 100vh;
-    background-image: url("/Images/birthday.png");
+    color: white;
+    background-color: black;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     z-index: -1;
-}
-#s1 {
-    display: none;
-    height: 1250px;
 }
 #s2 {
     display: none;
@@ -30,10 +27,6 @@
     color:white;
     font-family:'Courier New', Courier, monospace;
     font-size: 30px;
-}
-#s3 {
-    display: none;
-    height: 1200px;
 }
 #prev{
 transform: translate(600px, 600px);

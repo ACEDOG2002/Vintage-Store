@@ -1,5 +1,5 @@
 //VARIABLES
-const pages = ["Home", "s1", "s2", "s3"];
+const pages = [ "s2"];
 const ex1 = document.getElementById("ex1");
 const hM = document.getElementsByClassName("Back");
 //FUNCTIONS
